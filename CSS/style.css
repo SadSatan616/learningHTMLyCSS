@@ -1,3 +1,71 @@
-body {
+
+#titulo {
+	color: red;
+}
+
+p.texto {
+	color: slateblue;
+}
+
+p.especial{
+	color: mediumseagreen;
+}
+
+div p {
+	color: aquamarine;
+}
+
+div h2, div h3 {
+	color: brown;
+}
+
+* {
+	font-size: 24px;
+}
+
+/* Comentario */
+/*
+.color {
+	color: #f00; rojo 
+}
+
+.color {
+	color: #00ff00; verde
+}
+
+.color {
+	color: rgb(0, 0, 255); azul
+}
+*/ 
+
+.color{
+	/*border: 5px red groove;  primero tamaño, despues color, y despues tipo de borde*/
+	/*
+	dotted, dashed, solid, double,(groove, fridge, inset, outset): se aplican a elementos tridimensionales, depende del color, none, hidden 
+	 */
+	border-style: solid;
+	border-color: blue;
+	border-radius: 5px;
+	border-width: 5px; 
+}
+
+#fondo {
 	color: green;
+	background-color: ;
+	/*opacity: 0.3;*/
+	height: 200px;
+	background-image: url("ele.jpg");
+	background-size: 500px 200px; /* ancho x alto */
+	background-repeat: no-repeat; /* hace que la imagen no se repita */
+
+}
+
+.margen {
+	background-color: chocolate;
+	margin: 15px;
+	padding: 30px 15px; /* vertial y horizontal abajo y arriba (son margenes para adentro) */
+	border: solid black 3px;
+	height: 200px;
+	width: 50px;
+	overflow: scroll; /* scroll, hidden o visible(por defecto) */
 }
