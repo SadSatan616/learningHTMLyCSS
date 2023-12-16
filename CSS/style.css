@@ -21,6 +21,7 @@ div h2, div h3 {
 
 * {
 	font-size: 24px;
+	/* color: red; todo lo que no este predefinido con color se va a poner en negro*/
 }
 
 /* Comentario */
@@ -66,6 +67,115 @@ div h2, div h3 {
 	padding: 30px 15px; /* vertial y horizontal abajo y arriba (son margenes para adentro) */
 	border: solid black 3px;
 	height: 200px;
-	width: 50px;
+	width: 100px;
 	overflow: scroll; /* scroll, hidden o visible(por defecto) */
+	outline: 1px solid red;
+}
+
+.text{
+	font-family: 'Josefin Sans', sans-serif; /* fuentes, para agregar otra de google, copiamos el link y lo pegamos en el head del html*/
+	text-align: justify; /* right, left, justify */ 
+	text-decoration: underline; /*none(por defecto), underline(subrayado), line-through(tacha), overline(linea encima del texto) */
+	text-shadow: 3px 5px 5px blue; /* derecha, abajo, (si agregamos otro valor(antes de color) se hace un difuminado) color */
+}
+
+a:link {
+	font-size: 40px;
+	color: blueviolet;
+}
+
+a:visited { /* cambia de color si ya se ha visitado el link(ingresamos) */
+	color: gray;
+}
+
+a:hover { /* cuando se pasa el mouse por encima */
+	color: yellow;
+}
+
+a:active { /* cambia de color mientras lo apretamos */
+	color: red;
+}
+
+ul {
+	background-color: cyan;
+	list-style-type: ethiopic-abegede-am-et;  El estilo de como se ven las listas 
+	/*padding-left: 0;*/
+}
+
+table{
+	width: 100%;
+
+	border-collapse: collapse; /* sirve para que no haya espacios entre las tablas */
+}
+
+th, td{
+	border: solid 1px darkblue;
+	padding: 5px;
+}
+
+th {
+	background-color: tomato;
+	color: white;
+	text-align: left;
+}
+
+tr:nth-child(even){ /* even(impar)  odd(par) */
+	background-color: gray;
+}
+
+tr:hover {
+	background-color: darkgoldenrod;
+	cursor: pointer;
+}
+
+span {
+	display: block;
+	/*display: none; sirve para ocultar  */
+	/*visibility: hidden;*/
+	max-width: 300px;
+	background-color: fuchsia;
+}
+
+.inline {
+	display: inline;
+}
+
+#position {
+	position: sticky; /* static(por defecto), relative, fixed(hace que quede pegado arriba te desplazes arriba o abajo), sticky */
+	left: 20px;
+	top: 20px;
+}
+
+.left {
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+.right {
+	float: right;
+}
+
+.container {
+	height: 250px;
+}
+
+.column {
+	margin: 0;
+	padding: 10px 0;
+	width: 33.3%;
+}
+
+.inline-block{
+	display: inline-block;
+	height: 55px;
+	background-color: red;
+}
+
+.center{
+	padding: 50px 0;
+	text-align: center;
+	width: 200px;
+	margin: 0 auto;
+	background-color: aqua;
 }

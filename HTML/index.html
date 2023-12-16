@@ -2,111 +2,49 @@
 <html>
 <head>
 	
-	<title>Bienvenido a la PAGINA</title>
-	<style type="text/css">
-		table, th, td{
-			border: 1px solid black;
-		} 
-	</style>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<header>
+		<span style="color: red;">
+		<h1 id="titulo" >Blog de SadSatan y SadSabri</h1>
+		</span>
+	</header>
+	
+	<section>
+		<article class="post">
+			<h2>Mi amorsito</h2>
+			<p>Descripcion de mi post</p>
+			<img src="img/us.jpeg" alt="" width="200">
+			<p>Un mini blog sobre nosotros y nuestra historia <3. SadSatan</p>
+			<p>Nuestros instagrams son: </p>
+			<a target="_blank" href="https://www.instagram.com/sad.satan.616/" title="">Instagram de SadSatan</a>
+			<br>
+			<a target="_blank" href="https://www.instagram.com/sabrinajaqueline__/" title="">Instagram de SadSabri</a>
 
-	<table style="width: 500px;">
-		<thead>
-			<tr>
-				<th>Producto</th>
-				<th>Precio</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Hola beats</td>
-				<td>Gratis</td>
-			</tr>
-			<tr>
-				<td>Algooo</td>
-				<td>$19.99</td>
-			</tr>
-			<tr>
-				<td>Algo muy muy caro</td>
-				<td>$455.33</td>
-			</tr>
-		</tbody>
-
-		<tfoot>
-			<td></td>
-			<td>Total: $475.32</td>
-		</tfoot>
-
-	</table>
-
-	<!-- ul es lista no ordenada -->
-	<ul>
-		<li>Elemento 1</li>
-		<li>Elemento 2</li>
-		<li>Elemento 3</li>
-		<li>Elemento 4</li>
-	</ul>
-
-	<!--ol es lista ordenada -->
-	<ol>
-		<li value="50">Elemento 1</li>
-		<li>Elemento 2</li>
-		<li>Elemento 3</li>
-		<li>Elemento 4</li>
-		<li>
-			<ol>
-				<li style="list-style-type: lower-roman;">Sub elemento 1</li>
-				<li style="list-style-type: lower-roman;">Sub elemento 2</li>
-				<li style="list-style-type: lower-roman;">Sub elemento 3</li>
-			</ol>
-		</li>
-	</ol>
-
-
-	<form action="/formulario" method="POST">
-		<!-- Esto hace que al apretar en nombre, el prompt salte igual en la parte donde se escribe, dentro del ID va lo mismo en FOR-->
-		<label for="Nombre">Nombre</label>
-		<!--dentro de type va lo que se espera que se guarde.
-		type: text(defecto si no ponemos nada) espera texto, submit espera que lo apretes, password espera letras y numeros pero muestra ****, radio que es un circulito para apretar/marcar y checkbox es una casilla para apretar y marcar, file para poder elegir un archivo  -->
-		<input value="Arturo" id="Nombre" type="text" name="Nombre" placeholder="Nombre">
-		<br>
-		<label for="Apellido">Apellido</label>
-		<input value="Quinto" id="Apellido" type="text" name="Apellido" placeholder="Apellido">
-		<br>
-		<br>
-		<label for="comentario">Comentario</label>
-		<textarea cols="50" rows="10" id="comentario" placeholder="Ingrese comentario" name="Comentario">Valor por defecto</textarea>
-		<br>
-		<!--type en button: button: no hace nada, reset: resetea los valores en los campos, submit(por defecto): envia los datos -->
-		<button type="submit"><img src="img/anime.jpg" alt="" width="50">Enviar</button>
-		<button type="button"><img src="img/XD.png" alt="" width="50">Tipo boton</button>
-		<button type="reset">Resetear</button>
-	</form>
-
-	<h1>Mi primer Heading</h1>
-	<h2>Mi segundo Heading</h2>
-	<h3>Mi tercer Heading</h3>
-	<h4>Mi cuarto Heading</h4>
-	<h5>Mi quinto Heading</h5>
-	<h6>Mi sexto Heading</h6>
-	<p>SadSatan es el rey de todooooos</p>
-	<p>El rey de todos es sad sataaaan</p>
-	<hr>
-	<h2>No se que ponerrrr</h2>
-	<p>TRexto un poco mas</p>
-	<!-- Voy a tener que aprender nomas el de comentar xd -->
-	<!--span sirve para darle color a ciertas palabras o a todas las que quiera -->
-	<!-- br sirve para hacer salto de linea-->
-	<p>Este texto va a ser un poco mas largo para poder mostrar la <span style="color: red;"> esto se suponia que debe estar en color rojo </span> funcionanlidad de <br><br> span que es para poner en rojo tales palabras</p>
-
-	<!-- a sirve para crear un link a otra pagina-->
-	<!-- '' target="_blank" '' sirve para al hacer click en el link se abre otra pestaña con la pagina a donde nos redirecciona-->
-	<a target="_blank" href="https://xvideos.com">Ir a xvideos</a>
-	<!-- para mostrar una foto, primero ponemos la carpeta donde esta, despues / y el nombre de la imagen-->
-	<img src="img/anime.jpg" alt="" width="200">
-
-
-
+		</article class="post">
+		<hr>
+		<hr>
+		<article>
+			<h2>Titulo de mi post 2</h2>
+			<p>Descripcion de mi post 2</p>
+			<img src="img/love.jpg" alt="" width="200">
+			<p>Actualmente llevamos 7 meses :D. SadSatan</p>
+		</article>
+		<hr>
+		<hr>
+		<article class="post">
+			<h2>Fondo de pantalla de un nivel de Osu!</h2>
+			<p>Descripcion de mi post 3</p>
+			<img src="img/aaa.jpg" alt="" width="200">
+			<p>Esta es una imagen de Angel With A Shorgun xd del osu!. SadSatan</p>
+		</article>
+	</section>
+	<footer>
+		<a href="#titulo" title="">Ir al comienzo</a><br>
+		<a href="mailto:santiagovalentixd@gmail.com">Contactame por E-mail</a>
+		<p>Copyright 2023</p>
+	</footer>
 </body>
 </html>
